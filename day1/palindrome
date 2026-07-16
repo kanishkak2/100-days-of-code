@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner kk =  new Scanner(System.in);
+      String s = kk.nextLine();
+      int n = s.length();
+      boolean palindrome = true;
+      int l = 0;
+      int r = n-1;
+      while(l<r)
+      {
+         if(s.charAt(l)!=s.charAt(r))
+         {
+             palindrome = false;
+             break;
+         }
+         l++;
+         r--;
+      }
+      if(palindrome)
+      {
+        System.out.println("palindrome")
+      }
+      else
+      {
+           System.out.println("Not palindrome");
+           }
+           }
+           }
